@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <script src="./figuras.js"></script>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            background-color: white;
+            margin: 0;
+        }
+        .contenedor{
+            background: white;
+            border: 3px solid green;
+        }
+        .header{
+            background: yellow;
+            width: 100%;
+            height: 25%;
+        }
+
+        .mitad{
+            background: blue;
+            height: 50%;
+            width: 100%;
+        }
+        .footer{
+            background: red;
+            width: 100%;
+            height: 25%;
+        }
+        .header-hijo{
+            margin :0 ;
+            height: 100%;
+            width: 100%;
+            background: pink;
+        }
+        .header-hijo p{
+           color: grey ;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="header">
+            <div class="header-hijo">
+                <p>HOLA A TODOS</p>
+            </div>
+        </div>
+        <div class="mitad">
+            
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+    <!--
+    <header>
+        <div>
+            <h1>
+                Figuras Geometricas
+            </h1>
+            <p>este es el primer taller del curso practico de javascript</p>
+        </div>   
+    </header>
+    <section>
+        <div>
+            <div>
+                
+               
+                <div class="hoka">
+                    <p>
+                        calcula el area de un cuadrado
+                    </p>
+                </div>
+
+            </div>
+            <div>calcula el area de un cuadrado</div>
+        </div>
+        
+        
+        <!--<h2>calcula el area y perimetro de un cuadrado</h2>
+        <form action="">
+           
+            <label for="inputcuadrado">
+                escribe cuanto mide cada lado de tu cuadrado:
+            </label>
+            <input id="inputcuadrado" type="number">
+            <button type="button" onclick="calcularperimetrocuadrado()">
+                calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularareacuadrado()">
+                calcular el area
+            </button>
+            
+        </form>
+    </section>
+    <footer></footer>
+    -->
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+    <script src="./descuentos.js"></script>
+    <style>
+        .login{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .formulario{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="formulario">
+                <div>
+                    <label for="valor">Escriba el valor del producto</label>
+                    <input type="number" id="valor">
+                </div>
+                <div>
+                    <label for="cupon">Elija un cupon:</label>
+                    <div></div>
+                    <select name="cupon" id="cupon">
+                        <option value="empty"></option>
+                        <option value="JuanDC_es_Batman">JuanDC_es_Batman</option>
+                        <option value="pero_no_le_digas_a_nadie">pero_no_le_digas_a_nadie</option>
+                        <option value="es_un_secreto">es_un_secreto</option>
+                    </select>
+
+                    <!--<label for="porcentage">Escriba porcentage de descuento</label>
+                    <input type="number" id="porcentage">-->
+                </div>
+                <button type="button" onclick="cupon()">
+                    Calcular
+                </button>
+
+                <p id="result"></p>
+        </div>
+    </div>
+</body>
+</html>
